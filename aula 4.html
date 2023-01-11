@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<title> inserção de conteúdo HTML</title>
+    <meta charset="utf-8">
+    <script src=""></script>
+    
+</head>
+
+
+
+
+<body>
+<h3> Inserção de conteúdo HTML</h3>
+
+
+
+<!--div que vai ser inserido os dados-->
+<div id="output"></div>
+
+<script>
+ function pularLinha(){
+    document.write("<br>");
+ }   
+ 
+ function limparTabuada(){
+    mensagem = '';
+    output.innerHTML(mensagem);
+ }
+ 
+ function mostrarTabuada(){
+   //pedindo número para o usuário
+   var multiplicador = prompt("Digite um número");
+   
+   //convertendo string q o usuário envia para numero 
+   multiplicador = parseFloat(multiplicador);
+   limparTabuada();
+   
+   var i = 1;
+
+   while (i <= 10){
+
+      mensagem += multiplicador +  "x" + i + " = " + (multiplicador * i ) + "<br>";
+
+      i++;
+   }
+
+   //for( var i = 0; i <= 10; i++){
+    
+   // mensagem += multiplicador + " x " + i + " = " + (multiplicador * i) + '<br>';
+   //}
+   //inner HTML vai receber o que esta dentro de mensagem
+
+   output.innerHTML = mensagem;
+ }
+
+ 
+
+var output = document.querySelector('#output');
+var mensagem = '';
+
+pularLinha();
+
+
+ function limparTabuada(){
+  alert("oi");
+ }
+
+ //criei variável para acessar,setar o ID no campo HTML
+ //var infoIdHtml = document.querySelector('#output');
+
+ 
+ //console.log(infoIdHtml);
+ //criando variável mensagem recebendo uma string VAZIA
+ //var mensagem = '';
+
+ //for( var i = 0; i < 10; i++){
+ //   mensagem += 'i: ' + i + '<br>';
+ //}
+ //inserindo texto no HTML
+ //infoIdHtml.innerHTML = mensagem;
+    
+</script>
+
+<button onclick="mostrarTabuada()">Criar Tabuada</button>
+
+<button onclick="limparTabuada()">LIMPAR</button>
+
+</body>
+
+</html>

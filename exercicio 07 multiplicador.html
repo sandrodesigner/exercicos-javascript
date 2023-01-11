@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<title>Tabuada com função</title>
+    <meta charset="utf-8">
+    <script src=""></script>
+    
+</head>
+
+
+
+
+<body>
+<h3>Tabuada com função</h3>
+
+<script>
+
+    var multi = prompt("Digite um número");
+    multi = parseInt (multi);
+    
+    var n1 = 1;
+    
+    for(n1 = 1; n1 <= 10; n1 ++ ){
+        
+        document.write(multi + " x " + n1 + " = " + multi * n1 + "<br>");
+    }
+    
+    
+</script>
+
+<button onclick="limparTabuada()">LIMPAR</button>
+</body>
+
+</html>

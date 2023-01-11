@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exercicio</title>
+    <meta charset="utf-8">
+</head>
+
+<script>
+
+    var nome = prompt("Digite o nome do aluno")
+
+    var nota1 = prompt("Digite a primeira nota do aluno")
+
+    nota1 = parseFloat(nota1)
+
+    var nota2 = prompt("Digite a segunda nota do aluno")
+
+    nota2 = parseFloat(nota2)
+
+
+    var media = (nota1 + nota2) / 2 
+
+    if (media > 5 && nota1 > 0 && nota2 > 0){
+       
+        alert("Aluno " + nome + " Aprovado! Sua média foi: " + media);
+    }else{
+        alert("Aluno Reprovado! sua média foi: " + media);
+    }
+    
+    //outra forma
+
+    //if (n1 === 0 || n2 === 0 || media <= 5){
+
+        //alert("Aluno rerovado!");
+
+    //}else{
+       // alert("Aluno aprovado");
+   // }
+
+
+</script>
+
+<body>
+    Nota de aluno!<br>
+</body>
+
+</html>

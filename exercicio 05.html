@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exercicio</title>
+    <meta charset="utf-8">
+</head>
+<script>
+
+
+    var n1 = prompt("Jogador 01 digite um número")
+
+    n1 = parseFloat(n1)
+
+    var n2 = prompt("Jogador 02 digite um número")
+
+    n2 = parseFloat(n2)
+
+
+    if (n1 === n2) {
+        alert("O número escolhido entre os jogadores foi " + n1 + " empate");
+    }
+    else {
+
+        //sortear um numero entre 0 e 1
+        var nSorteado = parseInt(Math.random() * 2)
+
+
+        // se o numero sorteado for 0, ganha quem escolher o numero MENOR
+        if (nSorteado == 0) {
+
+            if (n1 < n2) {
+                alert("O jogador 01 GANHOU, escolheu o menor número! ");
+
+            } else {
+                alert("O jogador 02 GANHOU, escolheu o menor número! ");
+            }
+            // se o numero sorteado for 1, ganha quem escolher o numero MAIOR
+
+        } else {
+            if (n1 > n2) {
+                alert("O jogador 02 GANHOU, escolheu o maior número! ");
+            } else {
+                alert("O jogador 01 GANHOU, escolheu o maior número! ");
+
+            }
+
+        }
+    }
+
+
+</script>
+
+<body>
+    Sorteio de Número entre jogadores!<br>
+</body>
+
+</html>

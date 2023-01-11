@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exercício</title>
+    <meta charset="utf-8">
+    <script src=""></script>
+    
+</head>
+
+
+<script>
+function selecionaCor(){
+    var n = prompt("Digite um número")
+
+    
+    n = parseFloat(n)
+
+switch (n){
+    case 1:
+        alert("Carro preto selecionado!");
+        break;
+    case 2:
+        alert("Carro branco selecionado!");
+        break;
+    case 3:
+        alert("Carro vermelho selecionado");
+        break;        
+
+    default:
+        alert("SELECIONE uma opção de 1 a 3!");    
+}
+}
+
+</script>
+
+<body>
+    <h3>Estrutura switch Case</h3>
+    <h4>Escolha uma opção de cor para  seu carro</h4>
+    <p>Opção (1) Carro preto</p>
+    <p>Opção (2) Carro branco</p>
+    <p>Opção (3) Carro vermelho</p>
+
+    <button onclick="selecionaCor();">Selecione</button><br><br>
+
+    <!-- <select name="" id="">
+        <option value="">PRETO</option>
+        <option value="">BRANCO</option>
+        <option value="">VERMELHO</option>
+    </select> -->
+</body>
+
+</html>
